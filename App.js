@@ -8,6 +8,7 @@ import SignIn from "./src/Pages/SignIn";
 import { StatusBar } from "react-native";
 import Chart from "./src/Pages/Chart";
 import PacientList from "./src/Pages/PacientList";
+import Checking from "./src/Pages/Checking";
 
 const Stack = createNativeStackNavigator();
 
@@ -35,6 +36,11 @@ function App() {
           name="Chart"
           component={Chart}
           options={{ headerShown: false }}
+        />
+        <Stack.Screen
+            name="Checking"
+            component={Checking}
+            options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>
